@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    grid-auto-rows: 120vh;
+}
+
+.panel {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.panel .text {
+    background: #eeeee7;
+    padding: 30px 60px;
+}
+
+/* welcome panel */
+.panel.welcome {
+    background: #2a2c2f;
+    padding: 30px 60px 10px;
+}
+.panel.welcome nav a {
+    color: #a8a8a8;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.panel.welcome p {
+    color: #a8a8a8;
+    max-width: 540px;
+    line-height: 2em;
+}
+.panel.welcome h1 {
+    color: #eeeee7;
+    line-height: 3em;
+}
+.panel.welcome footer {
+    align-self: end;
+}
+
+/* about panel */
+.panel.about {
+    grid-template-rows: 3fr 1fr;
+}
+.panel.about img {
+    overflow-y: hidden;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* photos panel */
+.panel.photos {
+    grid-template-rows: 1fr 3fr;
+    overflow: hidden;
+}
+.panel.photos img {
+    height: 100%;
+    object-fit: cover;
+}
