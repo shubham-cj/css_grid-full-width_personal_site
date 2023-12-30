@@ -66,3 +66,32 @@ main {
     height: 100%;
     object-fit: cover;
 }
+
+/* responsive */
+@media screen and (max-width: 930px) {
+    main {
+        grid-template-columns: 1.2fr 1fr;
+    }
+    
+    .panel.photos {
+        grid-column: span 2;
+        grid-template-columns: 1.2fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        grid-template-columns: 100%;
+        grid-template-rows: 500px 400px 400px;
+    }
+    
+    .panel.about {
+        grid-row: 2;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    
+    .panel.photos {
+        grid-template-columns: 1fr 1fr;
+    }
+}
