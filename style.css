@@ -20,22 +20,22 @@ main {
     grid-template-columns: 1fr;
 }
 .panel .text {
-    background: #eeeee7;
+    background: #f0f0da;
     padding: 30px 60px;
 }
 
 /* welcome panel */
 .panel.welcome {
-    background: #2a2c2f;
+    background: #373330;
     padding: 30px 60px 10px;
 }
 .panel.welcome nav a {
-    color: #a8a8a8;
+    color: #aaaaaa;
     text-decoration: none;
     margin-right: 20px;
 }
 .panel.welcome p {
-    color: #a8a8a8;
+    color: #aaaaaa;
     max-width: 540px;
     line-height: 2em;
 }
@@ -93,5 +93,6 @@ main {
     
     .panel.photos {
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 }
